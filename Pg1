@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORGANIZAÇÃO WAVE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-yBp4l4D+PqL4I8Jjo6z9v6WCqkk9eO0W9QrH9eYfsqUgAKtiXjE5Z5bs3NM2UqBm" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: black;
+      color: yellow;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    .top-3 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .top-item {
+      text-align: center;
+      margin-bottom: 20px;
+      flex: 0 0 calc(33.33% - 20px);
+    }
+
+    .top-item img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .imagem-hd {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    aside {
+      position: fixed;
+      bottom: 10%;
+      right: 10%;
+      text-align: center;
+    }
+
+    #cadastroBtn {
+      padding: 10px 20px;
+      background-color: #ffcc00;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      animation: blink 1s infinite;
+      transition: background-color 0.3s;
+    }
+
+    #cadastroBtn:hover {
+      background-color: #ffd700;
+      animation: none;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: yellow;
+    }
+
+    footer a i {
+      font-size: 30px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>ORGANIZAÇÃO WAVE</h1>
+    <h2>Top 3 Melhores da Semana</h2>
+  </header>
+
+  <section class="top-3">
+    <div class="top-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQjcdrGyfMDne1EVbls94oEkI0Xn2smvX4Yw&usqp=CAU" alt="Top 1">
+      <h3>TOP 1</h3>
+    </div>
+    <div class="top-item">
+      <img src="" alt="Top 2">
+      <h3>TOP 2</h3>
+    </div>
+    <div class="top-item">
+      <img src="" alt="Top 3">
+      <h3>TOP 3</h3>
+    </div>
+  </section>
+
+  <section>
+    <h2>Últimas Tabelas</h2>
+    <!-- Adicione suas tabelas aqui -->
+    <img class="imagem-hd" src="" alt="Imagem HD">
+  </section>
+
+  <aside>
+    <button id="cadastroBtn">CADASTRAR LINE</button>
+  </aside>
+
+  <footer>
+    <a href="https://wa.me/seu_numero" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+    <a href="https://instagram.com/seu_perfil" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+    <a href="https://facebook.com/seu_perfil" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
